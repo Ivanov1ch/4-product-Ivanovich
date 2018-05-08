@@ -13,14 +13,31 @@
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/theme.css">
     </head>
 
     <body>
-        
-        <h1>Hello World</h1>
 
-       <p>Hey there, just testing out GitHub and Netlify...</p>
-        
+        <nav>
+            <div class="w3-bar w3-theme">
+                <a href="#" class="w3-bar-item w3-button">Cuphead</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small">Section 1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small">Section 2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small">Section 3</a>
+                
+                <a href="javascript:void(0)" style="cursor:pointer; font-size: 100%;" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium nav-hamburge" onclick="openNav()">&#9776;</a>
+            </div>
+            <aside id="mySidenav" class="sidenav w3-hide-large w3-hide-medium w3-theme">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </aside>
+        </nav>
+
+        <!--JavaScript-->
+        <script src="js/sidebar.js"></script>
     </body>
 
 </html>
