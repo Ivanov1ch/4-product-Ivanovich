@@ -189,11 +189,12 @@ footer img{
 
 /********SECTION-SPECIFIC STYLES********/
 #section-1 {
-    /*background-color: #ffcf10;*/
+    background-color: #ffcf10;
     height: 100vh;
     width: 100vw;
     overflow: auto;
     margin-bottom: 0;
+    transition: 1s background ease-in-out;
 }
 
 #section-1 img{
