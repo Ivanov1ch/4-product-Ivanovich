@@ -7,6 +7,10 @@
     font-style: normal;
 }
 /********MAIN********/
+::-webkit-scrollbar{
+    display: none;
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -49,19 +53,15 @@ footer .w3-cell-row .w3-cell {
     padding: 10px;
 }
 
-footer .w3-cell-row .w3-cell:hover {
-    
-}
-
 footer img{
-    max-width: 100%;
+    max-width: 0%;
     max-height: 155px;
     display: block;
     margin: 0 auto;
+    transition: 1s all ease;
 }
 
 /********FULL SCREEN STUFF********/
-
 .video-container {
     position: absolute;
     top: 0;
@@ -190,6 +190,10 @@ footer img{
 /********SECTION-SPECIFIC STYLES********/
 #section-1 {
     background-color: #ffcf10;
+    background-image: url('../img/cuphead-and-mugman.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     overflow: auto;
@@ -197,9 +201,11 @@ footer img{
     transition: 1s background ease-in-out;
 }
 
-#section-1 img{
-    max-width: 100%;
-    width: 100%;
+#title-img {
+    max-width: 110%;
+    width: 110%;
+    opacity: 0;
+    transition: 5s all ease-in-out;
 }
 
 #section-1 .w3-display-middle .w3-container{

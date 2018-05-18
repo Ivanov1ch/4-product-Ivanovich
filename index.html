@@ -8,10 +8,23 @@
         <!-- title tag -->
         <title>Cuphead Project - Daniel Ivanovich</title>
 
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#ffcf10">
+        <link rel="shortcut icon" href="./img/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#f1be17">
+        <meta name="msapplication-TileImage" content="./img/favicon/mstile-144x144.png">
+        <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
         <!--JavaScript-->
+        <script src="js/controlScrolling.js"></script>
         <script src="js/trailer.js"></script>
 
         <!-- mobile-friendly viewport -->
@@ -30,10 +43,10 @@
 
         <nav>
             <div id="navBar" class="w3-bar w3-theme">
-                <a href="#" class="w3-bar-item w3-button">Cuphead</a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small">Section 1</a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small">Section 2</a>
-                <a href="#" class="w3-bar-item w3-button w3-hide-small">Section 3</a>
+                <a href="#section-1" class="w3-bar-item w3-button">Cuphead</a>
+                <a href="#section-2" class="w3-bar-item w3-button w3-hide-small">Section 1</a>
+                <a href="#section-3" class="w3-bar-item w3-button w3-hide-small">Section 2</a>
+                <a href="#section-4" class="w3-bar-item w3-button w3-hide-small">Section 3</a>
 
                 <a href="javascript:void(0)" style="cursor:pointer; font-size: 100%;" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium nav-hamburger" onclick="openNav()">&#9776;</a>
             </div>
@@ -58,8 +71,8 @@
                 </div>
 
                 <div class="w3-display-middle">
-                    <div class="w3-container" style="text-align: center;">
-                        <img src="img/game-title.png" alt="Cuphead: Don't Deal With the Devil" style="filter: brightness(0%);">
+                    <div class="w3-container">
+                        <img src="img/game-title.png" alt="Cuphead: Don't Deal With the Devil" style="filter: brightness(0%);" id="title-img">
                     </div>
                 </div>
             </section>
@@ -96,33 +109,33 @@
         </main>
 
         <footer class="w3-theme">
-           <div class="w3-row">
-               <h1 class="centered-text w3-xxxlarge">Get Cuphead!</h3>
-           </div>
-            <div class="w3-cell-row">
+            <div class="w3-row">
+                <h1 class="centered-text w3-xxxlarge">Get Cuphead!</h3>
+            </div>
+            <div class="w3-cell-row" id="footer-imgs">
                 <div class="w3-cell w3-mobile w3-cell-middle w3-hover-shadow">
-                    <a href="https://www.esrb.org/ratings/ratings_guide.aspx" target="_blank">
-                        <img src="img/game-platforms/Everyone%2010+.png" alt="Rated E10+">
+                    <a href="https://www.esrb.org/ratings/ratings_guide.aspx" target="_blank" id="first-footer-img">
+                        <img src="img/game-platforms/Everyone%2010+.png" alt="Rated E10+" class="footer-img">
                     </a>
                 </div>
                 <div class="w3-cell w3-mobile w3-cell-middle w3-hover-shadow">
                     <a href="https://store.steampowered.com/app/268910/Cuphead/" target="_blank">
-                        <img src="img/game-platforms/steam.png" alt="Available on Steam">
+                        <img src="img/game-platforms/steam.png" alt="Available on Steam" class="footer-img">
                     </a>
                 </div>
                 <div class="w3-cell w3-mobile w3-cell-middle w3-hover-shadow">
                     <a href="http://studiomdhr.com/" target="_blank">
-                        <img src="img/game-platforms/copyright.png" alt="Copyright Studio MDHR">
+                        <img src="img/game-platforms/copyright.png" alt="Copyright Studio MDHR" class="footer-img">
                     </a>
                 </div>
                 <div class="w3-cell w3-mobile w3-cell-middle w3-hover-shadow">
                     <a href="https://www.xbox.com/en-US/games/cuphead" target="_blank">
-                        <img src="img/game-platforms/xbox-one.png" alt="Play on XBox One">
+                        <img src="img/game-platforms/xbox-one.png" alt="Play on XBox One" class="footer-img">
                     </a>
                 </div>
                 <div class="w3-cell w3-mobile w3-cell-middle w3-hover-shadow">
                     <a href="https://www.microsoft.com/en-us/store/p/cuphead/9njrx71m5x9p" target="_blank">
-                        <img src="img/game-platforms/windows.png" alt="Play on Windows">
+                        <img src="img/game-platforms/windows.png" alt="Play on Windows" class="footer-img">
                     </a>
                 </div>
             </div>
@@ -130,6 +143,7 @@
 
         <!--JavaScript-->
         <script src="js/sidebar.js"></script>
+        <script src="js/footerController.js"></script>
 
     </body>
 

@@ -1,15 +1,5 @@
 $( document ).ready(() => {
-    intervalManager(true, 500);
-});
-
-$('#trailer').one('loadstart', function (event) {
-    console.log("Video started loading");
-});
-$('#trailer').one('canplay', function (event) {
-
-    console.log("Video loaded");
-
-    play();
+    disableScroll();
 });
 
 var videoLoaded = null;
@@ -19,10 +9,10 @@ let intervalManager = function (flag, time) {
         videoLoaded =  setInterval(() =>{
             if(document.getElementById('trailer').readyState == 4){
                 console.log("Video loaded");
-
                 play();
-
-                clearInterval(videoLoaded);
+                setTimeout(()=>{
+                    if(videoLoaded) clearInterval(videoLoaded);
+                }, 100);
             }
         }, time);
     else
@@ -34,18 +24,17 @@ let play = function() {
     document.getElementById('section-1').style.background = "none";
     document.getElementById('trailer').play();
     document.getElementById('music').play();
+    setTimeout(()=>{
+        document.getElementById('title-img').style.opacity = "1";
+    }, 2000);
+    setTimeout(()=>{enableScroll();}, 5000);
 };
 
 //Dealing with the required user interaction - On any interaction, attempt the reload
-$('#body').one('scroll', () => {
-    if(!isPlaying('video')){
-        document.getElementById('trailer').pause();
-        document.getElementById('music').pause();
-        intervalManager(true, 500);
-    }
-});
-$('#body').one('click', ()=>{
-    if(!isPlaying('video')){
+$(document).one('click', ()=>{
+    console.log("Clicked");
+    if(!isPlaying('trailer')){
+        console.log("Video not playing");
         document.getElementById('trailer').pause();
         document.getElementById('music').pause();
         intervalManager(true, 500);
