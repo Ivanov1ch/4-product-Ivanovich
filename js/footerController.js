@@ -11,8 +11,7 @@ function isScrolledIntoView(elem)
 
 $(document).ready(()=>{
     let checkIfOnScreen = setInterval(()=>{
-        if(isScrolledIntoView(document.getElementById('first-footer-img'))){
-            console.log("In view");
+        if(isScrolledIntoView(document.getElementById('footer-title'))){
 
             let imgs = document.getElementsByClassName("footer-img");
 

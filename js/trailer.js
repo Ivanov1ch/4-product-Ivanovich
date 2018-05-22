@@ -27,7 +27,7 @@ let play = function() {
     setTimeout(()=>{
         document.getElementById('title-img').style.opacity = "1";
     }, 2000);
-    setTimeout(()=>{enableScroll();}, 5000);
+    enableScroll();
 };
 
 //Dealing with the required user interaction - On any interaction, attempt the reload

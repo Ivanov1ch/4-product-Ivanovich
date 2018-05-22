@@ -6,6 +6,9 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 /********MAIN********/
 ::-webkit-scrollbar{
     display: none;
@@ -19,7 +22,7 @@ body, html {
 
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 0;
 }
 
@@ -125,8 +128,8 @@ footer img{
 
 /* Full Screen Image Background */
 .parallax-fs {
-    background-image: url('/w3images/parallax1.jpg');
-    min-height: 100%;
+    background-image: url('../img/sp00ked.jpg');
+    min-height: 100vh;
 }
 
 /* Second image (Portfolio) */
