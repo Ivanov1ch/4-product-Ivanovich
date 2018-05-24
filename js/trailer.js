@@ -31,7 +31,7 @@ let play = function() {
 };
 
 //Dealing with the required user interaction - On any interaction, attempt the reload
-$(document).one('click tap', ()=>{
+$(document).one('click', ()=>{
     console.log("Clicked");
     if(!isPlaying('trailer')){
         console.log("Video not playing");
