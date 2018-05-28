@@ -5,3 +5,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("sideNav").style.width = "0";
 }
+
+function sidebar(id){
+    let element = document.getElementById(id);
+    closeNav();
+    window.scrollTo(element.offsetLeft,element.offsetTop + element.height);
+}

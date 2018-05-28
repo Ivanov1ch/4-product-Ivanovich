@@ -127,21 +127,19 @@ footer img{
 }
 
 /* Full Screen Image Background */
-.parallax-fs {
+.parallax-fs-1 {
     background-image: url('../img/sp00ked.jpg');
-    min-height: 100vh;
+    min-height: 125vh;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
-    min-height: 400px;
+.parallax-fs-2 {
+    background-image: url('../img/hand-drawn.jpg');
+    min-height: 125vh;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
-    min-height: 400px;
+.parallax-fs-3 {
+    background-image: url('../img/ghost-train.png');
+    min-height: 125vh;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -191,7 +189,7 @@ footer img{
 }
 
 /********SECTION-SPECIFIC STYLES********/
-#section-1 {
+#home-screen {
     background-color: #ffcf10;
     background-image: url('../img/cuphead-and-mugman.png');
     background-position: center;
@@ -211,14 +209,10 @@ footer img{
     transition: 5s all ease-in-out;
 }
 
-#section-1 .w3-display-middle .w3-container{
+#home-screen .w3-display-middle .w3-container{
     max-width: 100%;
     margin: 0 auto;
 }
-
-#section-2 {
-}
-
 
 /********MEDIA QUERIES********/
 

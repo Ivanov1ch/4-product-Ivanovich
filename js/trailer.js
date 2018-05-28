@@ -21,7 +21,7 @@ let intervalManager = function (flag, time) {
 
 
 let play = function() {
-    document.getElementById('section-1').style.background = "none";
+    document.getElementById('home-screen').style.background = "none";
     document.getElementById('trailer').play();
     document.getElementById('music').play();
     setTimeout(()=>{

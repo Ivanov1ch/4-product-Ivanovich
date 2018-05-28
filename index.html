@@ -43,23 +43,23 @@
 
         <nav>
             <div id="navBar" class="w3-bar w3-theme">
-                <a href="#section-1" class="w3-bar-item w3-button">Cuphead</a>
-                <a href="#section-2" class="w3-bar-item w3-button w3-hide-small">Section 1</a>
-                <a href="#section-3" class="w3-bar-item w3-button w3-hide-small">Section 2</a>
-                <a href="#section-4" class="w3-bar-item w3-button w3-hide-small">Section 3</a>
+                <a href="#about" class="w3-bar-item w3-button">Cuphead</a>
+                <a href="#art" class="w3-bar-item w3-button w3-hide-small">Painstakingly Beautiful</a>
+                <a href="#difficulty" class="w3-bar-item w3-button w3-hide-small">Tough As Nails</a>
+                <a href="#get-cuphead" class="w3-bar-item w3-button w3-hide-small">Get Cuphead</a>
 
                 <a href="javascript:void(0)" style="cursor:pointer; font-size: 100%;" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium nav-hamburger" onclick="openNav()">&#9776;</a>
             </div>
             <aside id="sideNav" class="sidenav w3-hide-large w3-hide-medium w3-theme">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="closebtn">&times;</span></a>
-                <a href="#">Section 1</a>
-                <a href="#">Section 2</a>
-                <a href="#">Section 3</a>
+                <a href="javascript:void(0)" onclick="sidebar('art')">Painstakingly Beautiful</a>
+                <a href="javascript:void(0)" onclick="sidebar('difficulty')">Tough As Nails</a>
+                <a href="javascript:void(0)" onclick="sidebar('get-cuphead')">Get Cuphead</a>
             </aside>
         </nav>
 
         <main>
-            <section id="section-1">
+            <section id="home-screen">
 
                 <audio autoplay="false" loop src="img/Cuphead%20OST%20-%20Introduction%20%5BMusic%5D.mp3" id="music" ></audio>
 
@@ -77,7 +77,7 @@
                 </div>
             </section>
             <div class="sectionsAfterVideo">
-                <section id="section-2" class="w3-theme">
+                <section id="about" class="w3-theme">
                     <br>
                     <h1 class="w3-jumbo w3-theme" style="text-align: center; letter-spacing: 2.5px;">The all-cartoon Magical Wondergame!</h1>
                     <div class="w3-container" style="padding: 0 20%; font-size: 18px;">
@@ -85,28 +85,30 @@
                         <p>Play as Cuphead or Mugman (in single player or local co-op) as you traverse strange worlds, acquire new weapons, learn powerful super moves, and discover hidden secrets while you try to pay your debt back to the devil!</p>
                     </div>
                 </section>
-                <section id="section-3" class="parallax parallax-fs">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                <section id="parallax-1" class="parallax parallax-fs-1">
                 </section>
-                <section id="section-4" class="w3-green">
+                <section id="art" class="w3-theme">
                     <br>
+                    <h1 class="w3-jumbo w3-theme" style="text-align: center; letter-spacing: 2.5px;">Painstakingly Beautiful</h1>
+                    <div class="w3-container" style="padding: 0 20%; font-size: 18px;">
+                        <p>Each and every one of the 120,000-plus total frames that make up Cuphead has been hand-drawn, inked, and colored, bringing out the beauty of the 1930s as you play.</p>
+                    </div>
+                </section>
+                <section id="parallax-2" class="parallax parallax-fs-2">
+                </section>
+                <section id="difficulty" class="w3-theme">
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <h1 class="w3-jumbo w3-theme" style="text-align: center; letter-spacing: 2.5px;">Tough As Nails</h1>
+                    <div class="w3-container" style="padding: 0 20%; font-size: 18px;">
+                        <p>The combination of the speed, size, and sheer ferocity of the enemies and projectile movements makes every fight unique. There's no limit on lives, but there are also no checkpoints, meaning one false move in the last phase of a fight can erase the last two or three minutes of hard-fought damage, making Cuphead the prettiest game to make you throw your controller.</p>
+                    </div>
+                </section>
+                <section id="parallax-3" class="parallax parallax-fs-3">
                 </section>
             </div>
         </main>
 
-        <footer class="w3-theme">
+        <footer class="w3-theme" id="get-cuphead">
             <div class="w3-cell-row" id="footer-imgs">
                 <div class="w3-cell w3-mobile w3-cell-middle w3-hover-shadow">
                     <a href="https://www.esrb.org/ratings/ratings_guide.aspx" target="_blank" id="first-footer-img">
