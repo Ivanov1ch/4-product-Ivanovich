@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5{
 
 nav {
     font-family: 'madness_hyperactiveregular', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     margin: 0px;
     z-index: 99999999;
 }
@@ -100,7 +100,7 @@ footer img{
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 87.81px;
+    top: 73px;
     left: 0px;
     z-index: 2;
     background: white;
