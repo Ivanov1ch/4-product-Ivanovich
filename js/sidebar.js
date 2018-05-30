@@ -9,5 +9,5 @@ function closeNav() {
 function sidebar(id){
     let element = document.getElementById(id);
     closeNav();
-    window.scrollTo(element.offsetLeft,element.offsetTop + element.height);
+    element.scrollIntoView(true);
 }
