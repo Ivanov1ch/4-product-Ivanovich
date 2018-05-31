@@ -38,3 +38,14 @@ function enableScroll() {
     window.ontouchmove = null;  
     document.onkeydown = null;  
 }
+
+let win = $(window);
+
+win.scroll(() => {
+    if(win.scrollTop < 73){
+        document.getElementById('nav').style.position = "static";
+    }
+    else{
+        document.getElementById('nav').style.position = "fixed";
+    }
+});
