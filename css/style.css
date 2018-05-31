@@ -35,6 +35,9 @@ nav {
     font-size: 32px;
     margin: 0px;
     z-index: 99999999;
+    top: 0;
+    width: 100%;
+    position: fixed;
 }
 
 audio { 
